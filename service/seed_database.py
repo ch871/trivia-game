@@ -36,4 +36,6 @@ def seed_trivia():
             answer = Answer(incorrect_answer=incorrect_answer,
                             question_id=quest_id)
             create_answer(answer)
+
 # seed_trivia()
+
