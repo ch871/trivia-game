@@ -3,8 +3,7 @@ from controlers.victory_controler import victory_bluprint
 from controlers.question_controler import question_bluprint
 from controlers.answer_controler import answer_bluprint
 from controlers.user_controler import user_bluprint
-from repositorys.create_tables import drop_all_tables
-from repositorys.create_tables import create_victory_table
+from repositorys.create_tables import create_victory_table,drop_all_tables
 from service.seed_database import seed_users,seed_trivia
 
 

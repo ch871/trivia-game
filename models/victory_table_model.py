@@ -8,5 +8,5 @@ class VictoryTable:
     question_id: int
     answer_text: str
     is_correct: bool
-    time_taken: timedelta
+    time_taken: timedelta = None
     id: int = None
