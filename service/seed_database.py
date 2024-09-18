@@ -1,4 +1,4 @@
-from repositorys.create_tables import create_user_table, create_answer_table, create_question_table
+from repositorys.create_tables import create_user_table, create_answer_table, create_question_table,create_victory_table
 from api.requets import get_users, get_trivia
 from models.user_model import User
 from models.quwestion_model import Question
@@ -9,7 +9,7 @@ from repositorys.question_reposetory import create_questions
 from repositorys.answer_repository import create_answer
 
 
-
+# create_victory_table()
 def seed_users():
     create_user_table()
     users = get_users()

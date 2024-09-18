@@ -65,7 +65,7 @@ def create_victory_table():
         answer VARCHAR(255) NOT NULL,
         is_correct boolean,
         time_taken interval,
-        FOREIGN KEY (question_id) REFERENCES questions(id) ON DELETE CASCADE
+        FOREIGN KEY (question_id) REFERENCES questions(id) ON DELETE CASCADE,
         FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
     )
     ''')
