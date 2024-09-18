@@ -9,7 +9,6 @@ from repositorys.question_reposetory import create_questions
 from repositorys.answer_repository import create_answer
 
 
-# create_victory_table()
 def seed_users():
     create_user_table()
     users = get_users()
@@ -19,7 +18,6 @@ def seed_users():
                     email=user_from_api['email']
                     )
         create_user(user)
-# seed_users()
 
 
 def seed_trivia():
@@ -37,5 +35,5 @@ def seed_trivia():
                             question_id=quest_id)
             create_answer(answer)
 
-# seed_trivia()
+
 

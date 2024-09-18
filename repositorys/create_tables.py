@@ -6,6 +6,20 @@ from config.sql_config import SQLALCHEMY_DATABASE_URI
 def get_db_connection():
     return psycopg2.connect(SQLALCHEMY_DATABASE_URI, cursor_factory=RealDictCursor)
 
+def drop_all_tables():
+    connection = get_db_connection()
+    cursor = connection.cursor()
+    cursor.execute('''
+        DROP TABLE answers;
+        DROP TABLE questions;
+        DROP TABLE users;
+        DROP TABLE fighters;
+        )
+        ''')
+    connection.commit()
+    cursor.close()
+    connection.close()
+
 
 def create_user_table():
     connection = get_db_connection()
